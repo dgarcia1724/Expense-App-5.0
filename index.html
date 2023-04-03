@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense App 5.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="budgetBox box">
+        <h1>Budget</h1>
+        <p>Value cannot be empty or negative</p>
+        <input type="number" placeholder="Enter Total Amount" />
+        <button class="btnSetBudget">Set Budget</button>
+      </div>
+      <div class="expensesBox box">
+        <h1>Expenses</h1>
+        <p>Values cannot be empty</p>
+        <input
+          class="inputTitle"
+          type="text"
+          placeholder="Enter Title of Product"
+        />
+        <input
+          class="inputCost"
+          type="number"
+          placeholder="Enter Cost of Product"
+        />
+        <button class="btnCheckAmount">Check Amount</button>
+      </div>
+      <div class="columnsBox box boxBlue">
+        <div class="columnTotalBudget">
+          <p>Total Budget</p>
+          <span>0</span>
+        </div>
+        <div class="columnExpenses">
+          <p>Expenses</p>
+          <span>0</span>
+        </div>
+        <div class="columnBalance">
+          <p>Balance</p>
+          <span>0</span>
+        </div>
+      </div>
+      <div class="expenseListBox box">
+        <h1>Expense List</h1>
+        <div class="expenseListItems"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
