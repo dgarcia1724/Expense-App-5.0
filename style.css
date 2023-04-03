@@ -1,0 +1,89 @@
+:root {
+  --main: rgb(0, 122, 229);
+  --white: white;
+  --red: red;
+  --bodyBackground: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: var(--bodyBackground);
+}
+
+.container {
+  margin: 2rem;
+}
+
+button {
+  background-color: var(--main);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+
+  cursor: pointer;
+}
+
+.box {
+  margin-bottom: 1.8rem;
+  padding: 1rem;
+  border-radius: 6px;
+
+  background-color: var(--white);
+}
+
+.box > button {
+  display: block;
+}
+
+.box > p {
+  margin-bottom: 0;
+
+  font-size: 1.4rem;
+  color: var(--red);
+}
+
+.box > * {
+  margin-bottom: 1rem;
+}
+
+.boxBlue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--main);
+  color: var(--white);
+}
+
+.boxBlue > div {
+  text-align: center;
+}
+
+.item {
+  margin-bottom: 1rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid var(--main);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item input {
+  width: 9rem;
+}
+
+.itemUpdate {
+  display: none;
+}
